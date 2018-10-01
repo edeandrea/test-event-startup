@@ -1,0 +1,23 @@
+spring:
+  application:
+    name: client-app
+
+logging:
+  level:
+    root: warn
+    com.clientapp: debug
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+  endpoint:
+    health:
+      show-details: always
+  info:
+    git:
+      mode: full
+
+client-app:
+  some-property: some-value

@@ -1,0 +1,8 @@
+org.springframework.context.ApplicationListener=\
+com.clientapp.listener.AppListener
+
+org.springframework.context.ApplicationContextInitializer=\
+com.clientapp.listener.AppContextInitializer
+
+org.springframework.boot.env.EnvironmentPostProcessor=\
+com.clientapp.listener.AppEnvironmentPostProcessor

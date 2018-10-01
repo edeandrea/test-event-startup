@@ -1,0 +1,23 @@
+spring:
+  application:
+    name: config-server
+
+logging:
+  level:
+    root: warn
+    com.configserver: debug
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+  endpoint:
+    health:
+      show-details: always
+  info:
+    git:
+      mode: full
+
+server:
+  port: 8888
